@@ -1,5 +1,13 @@
 # Introduction to R for Data Analysis
 
+<div align="center">
+  <img src="https://www.r-project.org/logo/Rlogo.png" alt="R Logo" width="100"/><br>
+  <h1>R Programming Language</h1>
+  <p>R is a powerful programming language and environment for statistical computing and graphics.</p>
+  <a href="https://www.r-project.org/" target="_blank"><strong>Learn more</strong></a>
+</div>
+
+
 R is a powerful programming language and environment commonly used for statistical computing, data analysis, and visualization. It provides a wide range of tools and libraries specifically designed for handling, processing, and visualizing data.
 
 ## Features of R
