@@ -84,3 +84,65 @@ mean_result <- mean(numeric_vector)
 # Sort a vector in ascending order
 sorted_vector <- sort(numeric_vector)
 
+```R
+# Load the lubridate package for date-time manipulation
+library(lubridate)
+
+# Create a date object
+date <- ymd("2024-02-07")
+
+# Create a time object
+time <- hm("12:30")
+
+# Combine date and time
+datetime <- ymd_hms("2024-02-07 12:30:00")
+
+# Get current date and time
+current_datetime <- Sys.time()
+
+# Extract components from a date-time object
+year <- year(datetime)
+month <- month(datetime)
+day <- day(datetime)
+hour <- hour(datetime)
+minute <- minute(datetime)
+second <- second(datetime)
+
+# Calculate difference between two date-time objects
+diff_seconds <- difftime(current_datetime, datetime, units = "secs")
+diff_minutes <- difftime(current_datetime, datetime, units = "mins")
+diff_hours <- difftime(current_datetime, datetime, units = "hours")
+diff_days <- difftime(current_datetime, datetime, units = "days")
+
+# Format date-time object
+formatted_datetime <- format(datetime, "%Y-%m-%d %H:%M:%S")
+
+# Add or subtract time intervals
+new_datetime <- datetime + days(1)
+new_datetime <- datetime - hours(2)
+
+# Extract weekday from a date-time object
+weekday <- wday(datetime, label = TRUE)
+
+# Check if a year is a leap year
+is_leap_year <- leap_year(year)
+
+# Calculate age
+birth_date <- ymd("1990-05-15")
+age <- interval(birth_date, current_datetime) %/% years(1)
+
+# Display results
+print(date)
+print(time)
+print(datetime)
+print(current_datetime)
+print(diff_seconds)
+print(diff_minutes)
+print(diff_hours)
+print(diff_days)
+print(formatted_datetime)
+print(new_datetime)
+print(weekday)
+print(is_leap_year)
+print(age)
+
