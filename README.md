@@ -43,3 +43,44 @@ sd_value <- sd(data)
 # Print the results
 print(paste("Mean:", mean_value))
 print(paste("Standard Deviation:", sd_value))
+
+```r
+# Working with Vectors in R
+
+In R, a vector is a basic data structure that holds elements of the same type. Here are some common operations you can perform with vectors in R.
+
+## Creating Vectors
+
+### Numeric Vector
+```R
+# Create a numeric vector
+numeric_vector <- c(1, 2, 3, 4, 5)
+
+# Create a character vector
+character_vector <- c("apple", "banana", "orange", "grape", "kiwi")
+
+# Create a logical vector
+logical_vector <- c(TRUE, FALSE, TRUE, FALSE, TRUE)
+
+# Access the first element of a vector
+first_element <- numeric_vector[1]
+
+# Access elements using logical indexing
+logical_index <- c(TRUE, FALSE, TRUE, FALSE, TRUE)
+selected_elements <- numeric_vector[logical_index]
+
+# Add two vectors element-wise
+result <- numeric_vector + c(10, 20, 30, 40, 50)
+
+# Get the length of a vector
+vector_length <- length(numeric_vector)
+
+# Sum of elements in a vector
+sum_result <- sum(numeric_vector)
+
+# Mean of elements in a vector
+mean_result <- mean(numeric_vector)
+
+# Sort a vector in ascending order
+sorted_vector <- sort(numeric_vector)
+
