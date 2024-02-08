@@ -30,7 +30,7 @@ Once you have R installed, you can begin exploring its capabilities by working t
 
 ## Example R Code
 
-Here's a simple example of R code to calculate the mean and standard deviation of a dataset:
+Here's a simple example of R code to calculate the mean and standard deviation of a dataset and creating vectors:
 
 ```r
 # Create a sample dataset
