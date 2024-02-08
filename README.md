@@ -146,3 +146,61 @@ print(weekday)
 print(is_leap_year)
 print(age)
 
+```R
+# Create a data frame manually
+# Each column is created as a vector, and they are combined into a data frame using data.frame() function
+name <- c("John", "Alice", "Bob", "Emily")
+age <- c(25, 30, 22, 28)
+city <- c("New York", "Los Angeles", "Chicago", "San Francisco")
+
+# Combine vectors into a data frame
+df <- data.frame(Name = name, Age = age, City = city)
+
+# Display the data frame
+print(df)
+
+# Accessing elements of a data frame
+# You can use row and column indices or column names to access elements
+# Accessing first row
+first_row <- df[1, ]
+
+# Accessing Age column
+age_column <- df$Age
+
+# Accessing data frame elements by column name and row index
+value <- df$Age[2]
+
+# Adding a new column to the data frame
+gender <- c("Male", "Female", "Male", "Female")
+df$Gender <- gender
+
+# Removing a column from the data frame
+df <- df[, -4]  # Remove the Gender column
+
+# Removing a row from the data frame
+df <- df[-2, ]  # Remove the second row
+
+# Get summary statistics for numeric columns
+summary(df$Age)
+
+# Filter rows based on conditions
+filtered_df <- df[df$Age > 25, ]
+
+# Sort data frame by a column
+sorted_df <- df[order(df$Age), ]
+
+# Add row to the data frame
+new_row <- data.frame(Name = "Jack", Age = 35, City = "Boston")
+df <- rbind(df, new_row)
+
+# Merge data frames
+# Assuming you have another data frame df2
+merged_df <- merge(df, df2, by = "Name")
+
+# Read data from a CSV file into a data frame
+# Assuming you have a CSV file named 'data.csv'
+data_from_csv <- read.csv("data.csv")
+
+# Write data frame to a CSV file
+write.csv(df, "output.csv", row.names = FALSE)
+
