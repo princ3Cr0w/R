@@ -240,3 +240,12 @@ midyear_sales <- quarter_1_sales + quarter_2_sales
 # console
 > yearend_sales
 [1] 158937.1
+
+# Conditional statements
+
+y <- 7
+y < 8 | y > 16
+x <- 4
+if (x > 0) {
+  
+  print("x is a positive number")
