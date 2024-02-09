@@ -1,0 +1,8 @@
+# our first calculation using assignment and operators for calculation
+quarter_1_sales <- 35657.98
+quarter_2_sales <- 43810.55
+midyear_sales <- quarter_1_sales + quarter_2_sales
+
+# In console
+> midyear_sales
+[1] 79468.53
