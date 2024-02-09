@@ -225,3 +225,13 @@ data.frame(x = c(1, 2, 3) , y = c(1.5, 5.5, 7.5))
 [1,]    3    6
 [2,]    4    7
 [3,]    5    8
+
+# Operators and Calculations
+# our first calculation
+quarter_1_sales <- 35657.98
+quarter_2_sales <- 43810.55
+midyear_sales <- quarter_1_sales + quarter_2_sales
+
+> yearend_sales <- midyear_sales * 2
+> yearend_sales
+[1] 158937.1
