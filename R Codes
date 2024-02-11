@@ -37,3 +37,19 @@ dataframe_name$row_name <- value
 variable_name <- if(condition) value1 else value2
 ```
 
+# Load the dplyr package
+library(dplyr)
+
+# Create a sample data frame
+data <- data.frame(
+  ID = c(1, 2, 3, 4, 5),
+  Name = c("John", "Alice", "Bob", "Emma", "Mike"),
+  Age = c(25, 30, 35, 40, 45)
+)
+
+# Filter data where Age is greater than 30
+filtered_data <- data %>%
+  filter(Age > 30)
+
+# View the filtered data
+print(filtered_data)
