@@ -22,3 +22,5 @@
 
 > browseVignettes("tidyverse")
 > browseVignettes("ggplot2")
+
+-- in browser vignette result: http://127.0.0.1:25190/library/ggplot2/doc/ggplot2-specs.html
