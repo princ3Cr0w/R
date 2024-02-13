@@ -1,4 +1,4 @@
--- Piping for nesting functions
+-- Piping for nesting (& filtering) functions
 -- highlight codes then hit run
 
 data("ToothGrowth")
