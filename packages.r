@@ -17,4 +17,8 @@
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package to force all conflicts to become errors
-> 
+
+-- browseVignettes commands:
+
+> browseVignettes("tidyverse")
+> browseVignettes("ggplot2")
