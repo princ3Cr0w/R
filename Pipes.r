@@ -48,6 +48,9 @@ View(ToothGrowth)
 > filtered_tg <- filter(ToothGrowth,dose==0.5)
 > View(filtered_tg)
 > arrange(filtered_tg,len)
+
+-- result is matrices
+
     len supp dose
 1   4.2   VC  0.5
 2   5.2   VC  0.5
