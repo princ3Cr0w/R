@@ -1,4 +1,5 @@
 -- Piping for nesting functions
+-- highlight codes then hit run
 
 data("ToothGrowth")
 View(ToothGrowth)
