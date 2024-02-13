@@ -72,12 +72,14 @@ View(ToothGrowth)
 18 16.5   OJ  0.5
 19 17.6   OJ  0.5
 20 21.5   OJ  0.5
+        
 > arrange(filter(ToothGrowth,dose==0.5,len)
 + arrange(filter(ToothGrowth,dose==0.5),len)
 Error: unexpected symbol in:
 "arrange(filter(ToothGrowth,dose==0.5,len)
 arrange"
 > arrange(filter(ToothGrowth,dose==0.5),len)
+          
     len supp dose
 1   4.2   VC  0.5
 2   5.2   VC  0.5
@@ -99,6 +101,7 @@ arrange"
 18 16.5   OJ  0.5
 19 17.6   OJ  0.5
 20 21.5   OJ  0.5
+          
 > filtered_toothgrowth <- ToothGrowth %>% 
 +   filter(dose==0.5) %>%
 +   arrange(len)
