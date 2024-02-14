@@ -1,10 +1,11 @@
-```r
+# Installing tidyverse package
+
 > installed.packages("tidyverse")
      Package LibPath Version Priority Depends Imports LinkingTo
      Suggests Enhances License License_is_FOSS License_restricts_use
      OS_type Archs MD5sum NeedsCompilation Built
 
--- when succesfully installed, install library("tidyverse")
+# when succesfully installed, install library("tidyverse")
 
 > library("tidyverse")
 ── Attaching core tidyverse packages ─────────────── tidyverse 2.0.0 ──
@@ -18,9 +19,9 @@
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package to force all conflicts to become errors
 
--- browseVignettes commands:
+# browseVignettes commands:
 
 > browseVignettes("tidyverse")
 > browseVignettes("ggplot2")
 
--- in browser vignette result: http://127.0.0.1:25190/library/ggplot2/doc/ggplot2-specs.html
+# in browser vignette result: http://127.0.0.1:25190/library/ggplot2/doc/ggplot2-specs.html
