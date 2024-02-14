@@ -3,7 +3,7 @@
 
 > data("diamonds")
 > View(diamonds)
-> head(diamonds)
+> head(diamonds) #head previews the first 6 rows of data set
 # A tibble: 6 × 10
   carat cut     color clarity depth table price     x     y
   <dbl> <ord>   <ord> <ord>   <dbl> <dbl> <int> <dbl> <dbl>
