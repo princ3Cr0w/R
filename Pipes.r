@@ -1,5 +1,5 @@
--- Piping for nesting (& filtering) functions
--- highlight codes then hit run
+# Piping for nesting (& filtering) functions
+# highlight codes then hit run
 
 data("ToothGrowth")
 View(ToothGrowth)
@@ -16,7 +16,7 @@ filtered_toothgrowth <- ToothGrowth %>%
   group_by(supp) %>% 
   summarize(mean_lean = mean(len,na.rm = T),.group="drop")
 
--- results in console
+# results in console
 
 data("ToothGrowth")
 View(ToothGrowth)
@@ -49,7 +49,7 @@ View(ToothGrowth)
 > View(filtered_tg)
 > arrange(filtered_tg,len)
 
--- result is matrices
+# result is matrices
 
     len supp dose
 1   4.2   VC  0.5
@@ -75,7 +75,7 @@ View(ToothGrowth)
         
 > arrange(filter(ToothGrowth,dose==0.5,len)
 + arrange(filter(ToothGrowth,dose==0.5),len)
-Error: unexpected symbol in:
+
 "arrange(filter(ToothGrowth,dose==0.5,len)
 arrange"
 > arrange(filter(ToothGrowth,dose==0.5),len)
