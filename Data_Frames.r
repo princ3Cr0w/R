@@ -41,6 +41,29 @@
 # ℹ 2 more variables: z <dbl>, carat_2 <dbl>
 # ℹ Use `print(n = ...)` to see more rows
 
+# Run "diamonds" data-set from data.frames to as_tibble
+
+> data(diamonds)
+> View(diamonds)
+> as_tibble(diamonds)
+# A tibble: 53,940 × 10
+   carat cut    color clarity depth table price     x     y
+   <dbl> <ord>  <ord> <ord>   <dbl> <dbl> <int> <dbl> <dbl>
+ 1  0.23 Ideal  E     SI2      61.5    55   326  3.95  3.98
+ 2  0.21 Premi… E     SI1      59.8    61   326  3.89  3.84
+ 3  0.23 Good   E     VS1      56.9    65   327  4.05  4.07
+ 4  0.29 Premi… I     VS2      62.4    58   334  4.2   4.23
+ 5  0.31 Good   J     SI2      63.3    58   335  4.34  4.35
+ 6  0.24 Very … J     VVS2     62.8    57   336  3.94  3.96
+ 7  0.24 Very … I     VVS1     62.3    57   336  3.95  3.98
+ 8  0.26 Very … H     SI1      61.9    55   337  4.07  4.11
+ 9  0.22 Fair   E     VS2      65.1    61   337  3.87  3.78
+10  0.23 Very … H     VS1      59.4    61   338  4     4.05
+# ℹ 53,930 more rows
+# ℹ 1 more variable: z <dbl>
+# ℹ Use `print(n = ...)` to see more rows
+> 
+
 # Run in console
 
 > names <- c("John", "George", "Ringo", "Paul")
