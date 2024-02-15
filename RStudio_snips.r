@@ -53,3 +53,7 @@ filtered_data <- data %>%
 
 # View the filtered data
 print(filtered_data)
+
+# tidyverse package see update
+
+> tidyverse_update()
