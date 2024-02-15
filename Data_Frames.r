@@ -95,3 +95,8 @@ $ age   <dbl> 20, 25, 30, 35
 2 George  25        45
 3  Ringo  30        50
 4   Paul  35        55
+
+# Ggplot reusable template
+
+>ggplot(data = <DATA>) + <GEOM_FUNCTION>
+mappings = aes(<MAPPINGS>))
