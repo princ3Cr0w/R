@@ -63,6 +63,9 @@ $ names <chr> "John", "George", "Ringo", "Paul"
 $ age   <dbl> 20, 25, 30, 35
 > colnames(people)
 [1] "names" "age"  
+
+# Mutate calls their age +20 years from now
+
 > mutate(people, age_in_20 = age+20)
    names age age_in_20
 1   John  20        40
