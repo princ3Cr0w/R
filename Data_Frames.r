@@ -4,7 +4,9 @@
 > data("diamonds")
 > View(diamonds)
 > head(diamonds) #head previews the first 6 rows of data set
+
 # A tibble: 6 × 10
+
   carat cut     color clarity depth table price     x     y
   <dbl> <ord>   <ord> <ord>   <dbl> <dbl> <int> <dbl> <dbl>
 1  0.23 Ideal   E     SI2      61.5    55   326  3.95  3.98
