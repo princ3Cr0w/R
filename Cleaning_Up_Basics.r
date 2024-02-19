@@ -294,3 +294,104 @@ penguins"
 #   body_mass_g <int>, sex <fct>, year <int>
 # ℹ Use `print(n = ...)` to see more rows
 > clean_names(penguins)
+
+# Organizing and filtering data (penguins)
+
+## Arrange bill length in ASC order
+
+>penguins %>% arrange(bill_length_mm)
+# A tibble: 344 × 8
+   species island    bill_length_mm bill_depth_mm
+   <fct>   <fct>              <dbl>         <dbl>
+ 1 Adelie  Dream               32.1          15.5
+ 2 Adelie  Dream               33.1          16.1
+ 3 Adelie  Torgersen           33.5          19  
+ 4 Adelie  Dream               34            17.1
+ 5 Adelie  Torgersen           34.1          18.1
+ 6 Adelie  Torgersen           34.4          18.4
+ 7 Adelie  Biscoe              34.5          18.1
+ 8 Adelie  Torgersen           34.6          21.1
+ 9 Adelie  Torgersen           34.6          17.2
+10 Adelie  Biscoe              35            17.9
+# ℹ 334 more rows
+# ℹ 4 more variables: flipper_length_mm <int>,
+#   body_mass_g <int>, sex <fct>, year <int>
+# ℹ Use `print(n = ...)` to see more rows
+
+## Arrange bill length in DESC order
+
+> penguins %>% arrange(-bill_length_mm)
+# A tibble: 344 × 8
+   species   island bill_length_mm bill_depth_mm
+   <fct>     <fct>           <dbl>         <dbl>
+ 1 Gentoo    Biscoe           59.6          17  
+ 2 Chinstrap Dream            58            17.8
+ 3 Gentoo    Biscoe           55.9          17  
+ 4 Chinstrap Dream            55.8          19.8
+ 5 Gentoo    Biscoe           55.1          16  
+ 6 Gentoo    Biscoe           54.3          15.7
+ 7 Chinstrap Dream            54.2          20.8
+ 8 Chinstrap Dream            53.5          19.9
+ 9 Gentoo    Biscoe           53.4          15.8
+10 Chinstrap Dream            52.8          20  
+# ℹ 334 more rows
+# ℹ 4 more variables: flipper_length_mm <int>,
+#   body_mass_g <int>, sex <fct>, year <int>
+# ℹ Use `print(n = ...)` to see more rows
+
+## Summarize and group by mean bill length
+
+> penguins %>% group_by(island) %>% drop_na() %>% summarize(mean_bill_length_mm = mean(bill_length_mm))
+# A tibble: 3 × 2
+  island    mean_bill_length_mm
+  <fct>                   <dbl>
+1 Biscoe                   45.2
+2 Dream                    44.2
+3 Torgersen                39.0
+
+## Summarize and group by max bill length
+
+> penguins %>% group_by(island) %>% drop_na() %>% summarize(max_bill_length_mm = max(bill_length_mm))
+# A tibble: 3 × 2
+  island    max_bill_length_mm
+  <fct>                  <dbl>
+1 Biscoe                  59.6
+2 Dream                   58  
+3 Torgersen               46  
+
+## Summarize and group by both mean and max bill length
+
+> penguins %>% group_by(species, island) %>% drop_na() %>% summarize(max_bl = max(bill_length_mm), mean_bl = mean(bill_length_mm))
+`summarise()` has grouped output by 'species'. You can
+override using the `.groups` argument.
+# A tibble: 5 × 4
+# Groups:   species [3]
+  species   island    max_bl mean_bl
+  <fct>     <fct>      <dbl>   <dbl>
+1 Adelie    Biscoe      45.6    39.0
+2 Adelie    Dream       44.1    38.5
+3 Adelie    Torgersen   46      39.0
+4 Chinstrap Dream       58      48.8
+5 Gentoo    Biscoe      59.6    47.6
+
+## Filter showing only Adelie penguin
+
+> penguins %>% filter(species == "Adelie")
+# A tibble: 152 × 8
+   species island    bill_length_mm bill_depth_mm
+   <fct>   <fct>              <dbl>         <dbl>
+ 1 Adelie  Torgersen           39.1          18.7
+ 2 Adelie  Torgersen           39.5          17.4
+ 3 Adelie  Torgersen           40.3          18  
+ 4 Adelie  Torgersen           NA            NA  
+ 5 Adelie  Torgersen           36.7          19.3
+ 6 Adelie  Torgersen           39.3          20.6
+ 7 Adelie  Torgersen           38.9          17.8
+ 8 Adelie  Torgersen           39.2          19.6
+ 9 Adelie  Torgersen           34.1          18.1
+10 Adelie  Torgersen           42            20.2
+# ℹ 142 more rows
+# ℹ 4 more variables: flipper_length_mm <int>,
+#   body_mass_g <int>, sex <fct>, year <int>
+# ℹ Use `print(n = ...)` to see more rows
+> 
