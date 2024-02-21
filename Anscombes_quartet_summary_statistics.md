@@ -1,6 +1,5 @@
-```r
 # Create statistical summary of Anscombe's quartet and visualization
-
+```r
 install.packages('Tmisc')
 library(Tmisc)
 data(quartet)
