@@ -180,11 +180,12 @@ downloaded 4.1 MB
 The downloaded source packages are in
 	‘/tmp/Rtmpp1MiKk/downloaded_packages’
 > library(ggplot2)
+```
 
--- Task: A stakeholder tells you, "I want to target people who book early, and I have a hypothesis that people with children have to book in advance."
+### Task: A stakeholder tells you, "I want to target people who book early, and I have a hypothesis that people with children have to book in advance."
 
 When you start to explore the data, it doesn't show what you would expect. That is why you decide to create a visualization to see how true that statement is-- or isn't.
-
+```
 -- code:
 
 > ggplot(data = hotel_bookings) +
@@ -194,18 +195,22 @@ When you start to explore the data, it doesn't show what you would expect. That 
 ```
 ![Snip](https://github.com/princ3Cr0w/R/blob/main/Screenshot%202024-02-24%20204232.png?raw=true)
 
-<sup> As seen on the viz, the manager's hypothesis is incorrect; increased lead time does not correlate to parents with children booking earlier </sup>
+<sup> As seen on the viz, the stakehlder's hypothesis is incorrect; increased lead time does not correlate to parents with children booking earlier </sup>
+
+### Task: Stakeholder says that she wants to increase weekend bookings, an important source of revenue for the hotel. Your stakeholder wants to know what group of guests book the most weekend nights in order to target that group in a new marketing campaign. She suggests that guests without children book the most weekend nights. Is this true? 
 
 ```
--- Task: Stakeholder says that she wants to increase weekend bookings, an important source of revenue for the hotel. Your stakeholder wants to know what group of guests book the most weekend nights in order to target that group in a new marketing campaign. She suggests that guests without children book the most weekend nights. Is this true? 
-
-
 Warning message:
 Removed 4 rows containing missing values (`geom_point()`). 
 > ggplot(data = hotel_bookings) +
 +     geom_point(mapping = aes(x = stays_in_weekend_nights, y = children ))
 Warning message:
 Removed 4 rows containing missing values (`geom_point()`). 
+
+-- plot viz:
 ```
-![Snip](
+
+![Snip](https://github.com/princ3Cr0w/R/blob/main/Screenshot%202024-02-24%20204732.png?raw=true)
+
+<sup> Stakeholder's hypothesis is correct; more bookings were made by people without children on weekends </sup>
 
