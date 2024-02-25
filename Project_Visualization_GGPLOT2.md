@@ -1,4 +1,4 @@
-# The basics of ggplot2
+# Ggplot2 visualization of Palmer Penguins
 ```r
 install.packages("ggplot2")
 Error in install.packages : Updating loaded packages
@@ -37,3 +37,13 @@ Warning message:
 In data(palmerpenguins) : data set ‘palmerpenguins’ not found
 > data(penguins)
 > View(penguins)
+
+-- ggplot code:
+
+>ggplot(data = penguins) + geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g))
+
+```
+
+![Snip](https://github.com/princ3Cr0w/R/blob/main/Screenshot%202024-02-24%20195144.png)
+
+<sup>Inspecting the plot visualization of the penguins show positive relations or body mass and flipper length; the larger the penguin, the longer the flippers</sup>
