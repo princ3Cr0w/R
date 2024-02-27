@@ -242,14 +242,8 @@ When you start to explore the data, it doesn't show what you would expect. That 
 
 <sup> As seen on the viz, the stakeholder's hypothesis is incorrect; increased lead time does not correlate to parents with children booking earlier </sup>
 
-## Sub-task from stakeholder: How do we differentiate the 3 species from one another in the scatterplot?
-```
--- code for ggplot color viz:
 
-ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, color=species))
 
--- plot viz:
-![Snip](
 ```
 
 ### Task: Stakeholder says that she wants to increase weekend bookings, an important source of revenue for the hotel. Your stakeholder wants to know what group of guests book the most weekend nights in order to target that group in a new marketing campaign. She suggests that guests without children book the most weekend nights. Is this true? 
