@@ -56,6 +56,8 @@ In data(palmerpenguins) : data set ‘palmerpenguins’ not found
 
 ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, color=species))
 
+```
+
 ![Snip](https://github.com/princ3Cr0w/R/blob/main/Screenshot%202024-02-26%20194418.png)
 
 <sup> As we can see, the viz differentiated the 3 species: Adelie, Gentoo, and Chinstrap in 3 different colors for easy identification </sup>
