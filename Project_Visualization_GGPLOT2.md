@@ -85,6 +85,10 @@ x'
 
 > ggplot(data=penguins) + geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, color=species)) + facet_wrap(~species)
 
+-- facet grid for separate species and sex using plot
+
+> ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, color=species)) + facet_grid(sex~species)
+
 
 
 ```
