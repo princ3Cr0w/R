@@ -1,4 +1,5 @@
 # Ggplot2 visualization of Palmer Penguins and analysis of Hotel Bookings
+### Quick reference <ahref>https://ggplot2.tidyverse.org/</ahref>
 ```r
 install.packages("ggplot2")
 Error in install.packages : Updating loaded packages
