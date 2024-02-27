@@ -48,6 +48,16 @@ In data(palmerpenguins) : data set ‘palmerpenguins’ not found
 
 <sup>Inspecting the plot visualization of the penguins show positive relations or body mass and flipper length; the larger the penguin, the longer the flippers</sup>
 
+## Subtask from stakeholder: How we differentiate the species of penguins apart? 
+
+```
+
+-- ggplot code for viz colorization:
+
+ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, color=species))
+
+```
+
 <br></br>
 ## Hotel Bookings analysis and visualization
 <br>
