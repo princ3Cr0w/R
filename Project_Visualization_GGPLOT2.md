@@ -249,7 +249,8 @@ When you start to explore the data, it doesn't show what you would expect. That 
 
 ### Task: Stakeholder says that she wants to increase weekend bookings, an important source of revenue for the hotel. Your stakeholder wants to know what group of guests book the most weekend nights in order to target that group in a new marketing campaign. She suggests that guests without children book the most weekend nights. Is this true? 
 
-```
+```r
+
 -- code
 
 Warning message:
@@ -260,7 +261,7 @@ Warning message:
 Removed 4 rows containing missing values (`geom_point()`). 
 
 -- plot viz:
-```
+
 
 ![Snip](https://github.com/princ3Cr0w/R/blob/main/Screenshot%202024-02-24%20204732.png?raw=true)
 
