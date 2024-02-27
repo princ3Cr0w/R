@@ -50,7 +50,7 @@ In data(palmerpenguins) : data set ‘palmerpenguins’ not found
 
 ## Subtask from stakeholder: How we differentiate the species of penguins apart? 
 
-```
+```r
 
 -- ggplot code for viz colorization:
 
