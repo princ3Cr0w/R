@@ -62,7 +62,7 @@ ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g,
 
 <sup> As we can see, the viz differentiated the 3 species: Adelie, Gentoo, and Chinstrap in 3 different colors for easy identification </sup>
 
-```
+
 
 <br></br>
 ## Hotel Bookings analysis and visualization
