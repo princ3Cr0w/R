@@ -72,7 +72,7 @@ ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g,
 >or size=species<br>
 
 ```r
--- ggplot for smoothlines with colors:
+-- Extra- ggplot for smoothlines with colors:
 
  ggplot(data=penguins)+geom_smooth(mapping=aes(x=flipper_length_mm, y=body_mass_g, shape=species, color=species))
 `geom_smooth()` using method = 'loess' and formula = 'y ~
