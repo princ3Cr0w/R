@@ -69,7 +69,16 @@ ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g,
 >We can also use shapes in lieu of colors or both and even with plot size<br>
 >code: ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, shape=species))<br>
 >or ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, shape=species, color=species))<br>
->or size=species
+>or size=species<br>
+
+```r
+-- ggplot for smoothlines with colors:
+
+ ggplot(data=penguins)+geom_smooth(mapping=aes(x=flipper_length_mm, y=body_mass_g, shape=species, color=species))
+`geom_smooth()` using method = 'loess' and formula = 'y ~
+x'
+
+```
 
 <br></br>
 ## Hotel Bookings analysis and visualization
