@@ -230,7 +230,8 @@ The downloaded source packages are in
 ### Task: A stakeholder tells you, "I want to target people who book early, and I have a hypothesis that people with children have to book in advance."
 
 When you start to explore the data, it doesn't show what you would expect. That is why you decide to create a visualization to see how true that statement is-- or isn't.
-```
+
+```r
 -- code:
 
 > ggplot(data = hotel_bookings) +
