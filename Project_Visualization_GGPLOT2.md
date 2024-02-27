@@ -38,6 +38,8 @@ In data(palmerpenguins) : data set ‘palmerpenguins’ not found
 > data(penguins)
 > View(penguins)
 
+```r
+
 -- ggplot code:
 
 >ggplot(data = penguins) + geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g))
