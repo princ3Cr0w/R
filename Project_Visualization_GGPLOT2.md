@@ -65,7 +65,7 @@ ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g,
 <sup> As we can see, the viz differentiated the 3 species: Adelie, Gentoo, and Chinstrap in 3 different colors for easy identification </sup>
 
 >[!Note]
->We can also use shapes in lieu of colors or both<br>
+>We can also use shapes in lieu of colors or both and even with plot size<br>
 >code: ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, shape=species))<br>
 >or ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, shape=species, color=species))<br>
 >or size=species
