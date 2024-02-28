@@ -1,5 +1,6 @@
 # Ggplot2 visualization of Palmer Penguins and analysis of Hotel Bookings
-### Quick reference <ahref>https://ggplot2.tidyverse.org/</ahref>
+### Quick reference <ahref>https://ggplot2.tidyverse.org/</ahref><br>
+<sup> Best practice: Run the colname(), head(), and glimpse() to preview data and the types before the analysis and visualization </sup>
 ```r
 install.packages("ggplot2")
 Error in install.packages : Updating loaded packages
