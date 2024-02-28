@@ -288,4 +288,6 @@ ggplot(data = hotel_bookings) +
 -- viz:
 
 ```
-![Snip](
+![Snip](https://github.com/princ3Cr0w/R/blob/main/Screen%20Shot%202024-02-27%20at%209.48.35%20PM.png?raw=true)
+
+### 3rd Sub-task: After reviewing the new charts, your stakeholder asks you to create separate charts for each deposit type and market segment to help them understand the differences more clearly.
