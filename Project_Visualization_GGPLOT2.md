@@ -97,6 +97,8 @@ x'
 ## Hotel Bookings analysis and visualization
 <br>
 
+<sup> Best practice: Run the colname(), head(), and glimpse() to preview data and the types before the analysis and visualization </sup>
+
 ```r
 hotel_bookings <- read.csv("hotel_bookings.csv")
 > View(hotel_bookings)
