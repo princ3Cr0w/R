@@ -274,3 +274,13 @@ Removed 4 rows containing missing values (`geom_point()`).
 ```r
 ggplot(data = hotel_bookings) +
   geom_bar(mapping = aes(x = distribution_channel))
+-- viz:
+```
+
+![Snip](https://github.com/princ3Cr0w/R/blob/main/Screen%20Shot%202024-02-27%20at%209.37.13%20PM.png?raw=true)
+
+### 2nd Sub-task: After exploring your bar chart, your stakeholder has more questions. Now they want to know if the number of bookings for each distribution type is different depending on whether or not there was a deposit or what market segment they represent. 
+
+```r
+ggplot(data = hotel_bookings) +
++     geom_bar(mapping = aes(x = distribution_channel, fill = market_segment))
