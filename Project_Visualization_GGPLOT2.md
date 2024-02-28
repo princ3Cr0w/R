@@ -292,7 +292,7 @@ ggplot(data = hotel_bookings) +
 
 ### 3rd Sub-task: After reviewing the new charts, your stakeholder asks you to create separate charts for each deposit type and market segment to help them understand the differences more clearly.
 
-```
+```r
 ggplot(data = hotel_bookings) +
 +     geom_bar(mapping = aes(x = distribution_channel)) +
 +     facet_wrap(~deposit_type) +
