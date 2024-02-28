@@ -269,3 +269,8 @@ Removed 4 rows containing missing values (`geom_point()`).
 
 <sup> Stakeholder's hypothesis is correct; more bookings were made by people without children on weekends </sup>
 
+### Sub-task: Your stakeholder is interested in developing promotions based on different booking distributions, but first they need to know how many of the transactions are occurring for each different distribution type.
+
+```r
+ggplot(data = hotel_bookings) +
+  geom_bar(mapping = aes(x = distribution_channel))
