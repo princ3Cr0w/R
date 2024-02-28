@@ -284,3 +284,8 @@ ggplot(data = hotel_bookings) +
 ```r
 ggplot(data = hotel_bookings) +
 +     geom_bar(mapping = aes(x = distribution_channel, fill = market_segment))
+
+-- viz:
+
+```
+![Snip](https://github.com/princ3Cr0w/R/blob/main/Screen%20Shot%202024-02-27%20at%209.37.13%20PM.png)
