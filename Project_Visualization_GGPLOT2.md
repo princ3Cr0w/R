@@ -256,12 +256,9 @@ When you start to explore the data, it doesn't show what you would expect. That 
 
 -- code
 
-Warning message:
-Removed 4 rows containing missing values (`geom_point()`). 
 > ggplot(data = hotel_bookings) +
 +     geom_point(mapping = aes(x = stays_in_weekend_nights, y = children ))
 Warning message:
-Removed 4 rows containing missing values (`geom_point()`). 
 
 -- plot viz:
 
