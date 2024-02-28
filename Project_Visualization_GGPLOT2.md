@@ -291,3 +291,14 @@ ggplot(data = hotel_bookings) +
 ![Snip](https://github.com/princ3Cr0w/R/blob/main/Screen%20Shot%202024-02-27%20at%209.48.35%20PM.png?raw=true)
 
 ### 3rd Sub-task: After reviewing the new charts, your stakeholder asks you to create separate charts for each deposit type and market segment to help them understand the differences more clearly.
+
+```
+ggplot(data = hotel_bookings) +
++     geom_bar(mapping = aes(x = distribution_channel)) +
++     facet_wrap(~deposit_type) +
++     theme(axis.text.x = element_text(angle = 45))
+
+-- viz:
+
+```
+![Snip](
