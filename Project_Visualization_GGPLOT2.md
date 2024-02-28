@@ -302,3 +302,5 @@ ggplot(data = hotel_bookings) +
 
 ```
 ![Snip](https://github.com/princ3Cr0w/R/blob/main/Screen%20Shot%202024-02-27%20at%209.56.43%20PM.png?raw=true)
+
+<sup> Conclusion: TA/TO has the highest distribution in the bookings </sup>
