@@ -335,4 +335,13 @@ ggplot(data = hotel_bookings) +
   labs(title="Comparison of market segments by hotel type for hotel bookings",
        subtitle=paste0("Data from: ", mindate, " to ", maxdate))
 
+-- Alternate code for disperesed annotations in the plot:
+
+ggplot(data = hotel_bookings) +
+  geom_bar(mapping = aes(x = market_segment)) +
+  facet_wrap(~hotel) +
+  theme(axis.text.x = element_text(angle = 45)) +
+  labs(title="Comparison of market segments by hotel type for hotel bookings",
+       caption=paste0("Data from: ", mindate, " to ", maxdate))
+
 
