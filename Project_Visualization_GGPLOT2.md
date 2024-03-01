@@ -317,7 +317,7 @@ ggplot(data = hotel_bookings) +
 +     facet_wrap(~hotel) + labs(title="Market Segment")
 
 -- viz:
-
+```
 ![Snip](https://github.com/princ3Cr0w/R/blob/main/Screen%20Shot%202024-02-29%20at%209.59.05%20PM.png?raw=true)
 
 <sup> The plot now has annotation or title: "Market Segment" </sup>
