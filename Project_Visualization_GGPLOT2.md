@@ -321,3 +321,18 @@ ggplot(data = hotel_bookings) +
 ![Snip](https://github.com/princ3Cr0w/R/blob/main/Screen%20Shot%202024-02-29%20at%209.59.05%20PM.png?raw=true)
 
 <sup> The plot now has annotation or title: "Market Segment" </sup>
+
+```r
+
+-- Additional layer to the annotations by adding year min+max:
+
+> mindate <- min(hotel_bookings$arrival_date_year)
+> maxdate <- max(hotel_bookings$arrival_date_year)
+ggplot(data = hotel_bookings) +
+  geom_bar(mapping = aes(x = market_segment)) +
+  facet_wrap(~hotel) +
+  theme(axis.text.x = element_text(angle = 45)) +
+  labs(title="Comparison of market segments by hotel type for hotel bookings",
+       subtitle=paste0("Data from: ", mindate, " to ", maxdate))
+
+
