@@ -28,3 +28,7 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+-- see link for reference (shows RMD file for visual documentation)
+                           
+https://d7c4a749799a4593b47496f32c6f8980.app.posit.cloud/?view=rmarkdown
